@@ -1,0 +1,210 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none; }
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block; }
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+
+html {
+  background-image: url("../../assets/bg-main-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -300px;
+  width: 100%;
+  overflow-x: hidden; }
+
+body {
+  max-width: 1140px;
+  margin: auto; }
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #191826; }
+
+.heading-1, .heading-2 {
+  font-weight: 700; }
+
+.heading-1 {
+  font-size: 88px;
+  line-height: 1;
+  margin-bottom: 40px; }
+
+.heading-2 {
+  font-size: 40px;
+  line-height: 1.3;
+  margin-bottom: 22px; }
+
+.dollar {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1; }
+
+.btn {
+  display: block;
+  width: 100%;
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px 0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all .2s; }
+  .btn svg {
+    fill: currentColor; }
+  .btn--ios {
+    margin-top: 45px;
+    background-color: #191826;
+    color: #fcf9f8; }
+    .btn--ios:hover {
+      background-color: #65e2db; }
+  .btn--android {
+    margin-top: 16px;
+    background-color: #fcf9f8;
+    color: #191826; }
+    .btn--android:hover {
+      background-color: #ffba66; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 90px 0; }
+  .footer__logo {
+    height: 32px;
+    flex-shrink: 0;
+    margin-right: 135px; }
+  .footer__copyright {
+    width: 365px;
+    font-size: 16px;
+    margin-right: auto; }
+
+.social {
+  display: flex;
+  align-self: center;
+  gap: 20px; }
+  .social__item {
+    fill: #191826;
+    cursor: pointer;
+    transition: all .2s; }
+    .social__item:hover {
+      fill: #fa7352; }
+
+.inline-link {
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .2s; }
+  .inline-link:hover {
+    color: #fa7352; }
+
+.header {
+  position: relative;
+  padding-top: 62px;
+  padding-bottom: 110px; }
+  .header__logo {
+    height: 32px; }
+  .header__content {
+    width: 80%;
+    margin-top: 8vw; }
+  .header__decoration {
+    position: absolute;
+    top: -100px;
+    right: -165px; }
+
+.main {
+  background-color: #191826;
+  height: 600px;
+  position: relative;
+  margin-top: 215px;
+  margin-bottom: 115px;
+  border-radius: 12px; }
+  .main__img {
+    position: absolute;
+    width: 30%;
+    top: -215px;
+    left: 100px;
+    z-index: 1; }
+  .main__decoration {
+    transform: translate(340px, -40px);
+    overflow: hidden; }
+  .main__content-box {
+    background-color: #fa7352;
+    color: #fcf9f8;
+    border-radius: 12px;
+    padding: 54px;
+    display: block;
+    position: absolute;
+    width: 450px;
+    bottom: -115px;
+    right: 95px;
+    z-index: 2; }
+  .main__price {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 40px; }
